@@ -1,18 +1,4 @@
-.idea
-*.pyc
-__pycache__
-db.sqlite3
-media/
-project/settings.py
 .DS_Store
-venv
-env
-.env
-receipt.rtf
-./.env
-
-
-
 node_modules
 /dist
 
@@ -28,7 +14,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Editor directories and files
-
+.idea
 .vscode
 *.suo
 *.ntvs*
