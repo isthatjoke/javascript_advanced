@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "Modal",
+  name: "Basket",
   methods: {
       close() {
         this.$emit('close');
