@@ -13,7 +13,7 @@
                           <div class="card-body">
                             <h5 class="card-title">{{item.product_name}}</h5>
                             <p class="card-text">Price: {{item.price}}</p>
-                            <a href="#" class="btn btn-primary">Добавить</a>
+                            <button @click="addToCart(item)" class="btn btn-primary">Добавить</button>
                           </div>
                         </div>
                       </div>
@@ -34,7 +34,12 @@ export default {
   name: "GoodsList",
   props: {
     goods: Array,
+    },
+  methods: {
+    addToCart(item) {
+      this.$emit('add-to-cart', item);
     }
+  }
   }
 
 </script>
